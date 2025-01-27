@@ -1,0 +1,12 @@
+services:
+  gymmaster-proxy_ag:
+    container_name: gymmaster-proxy_ag
+    build: .
+    ports:
+      - "80:80"
+    networks:
+      - shared_network
+
+networks:
+  shared_network:
+    external: true  
